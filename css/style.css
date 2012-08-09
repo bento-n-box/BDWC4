@@ -1,0 +1,742 @@
+*{
+	padding:0;
+	margin:0;
+	list-style:none;
+
+}
+
+@font-face {
+    font-family: 'BariolBoldBold';
+    src: url('../fonts/bariol_bold-webfont.eot');
+    src: url('../fonts/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_bold-webfont.woff') format('woff'),
+         url('../fonts/bariol_bold-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_bold-webfont.svg#BariolBoldBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BariolLightLight';
+    src: url('../fonts/bariol_light-webfont.eot');
+    src: url('../fonts/bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_light-webfont.woff') format('woff'),
+         url('../fonts/bariol_light-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_light-webfont.svg#BariolLightLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BariolRegularRegular';
+    src: url('../fonts/bariol_regular-webfont.eot');
+    src: url('../fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_regular-webfont.woff') format('woff'),
+         url('../fonts/bariol_regular-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_regular-webfont.svg#BariolRegularRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'BariolThinRegular';
+    src: url('../fonts/bariol_thin-webfont.eot');
+    src: url('../fonts/bariol_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_thin-webfont.woff') format('woff'),
+         url('../fonts/bariol_thin-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_thin-webfont.svg#BariolThinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	font-size: 100%;
+
+}
+
+/* BDW panel, nav */
+
+#bdw-logo {
+  width: 68px;
+  height: 23px;
+  text-indent: -999em;
+  margin: 30px;
+  background: url(../images/bdw-logo.png) no-repeat;    
+}
+
+#c4-logo {
+  width: 100%;
+  height: 60px; 
+  text-indent: -999em;
+  margin:0 0 0 30px;
+  background: url(../images/c4-logo.png) no-repeat;
+}
+
+#c4-logo-close {
+  width: 27px;
+  height: 60px;
+  text-indent: -999em;
+  margin:0 0 0 30px;
+  background: url(../images/c4-logo-close.png) no-repeat;
+}
+
+#primaryNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+	min-width: 220px;  
+	width: 20%;
+  padding: 0;
+  margin: 0;
+  background: #000;
+  z-index: 99;
+}
+
+#primaryNav ul  {
+	margin: 15px 0 15px 50px;
+
+}
+
+#primaryNav li a {
+  font-family: Helvetica,arial,sans-serif;  
+  color: #FFF;
+  font-size: 87.5%;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+#Benton-Rochester-a.selected,
+#Benton-Rochester-a:hover {
+  color: #CCFF00;
+}
+
+#Dan-Nelson-a.selected,
+#Dan-Nelson-a:hover {
+  color: #33FF00;
+}
+
+#Dave-Lazkarzewski-a.selected,
+#Dave-Lazkarzewski-a:hover {
+  color: #00FF99;
+}
+
+#Davis-Godbout-a.selected,
+#Davis-Godbout-a:hover {
+  color: #00FFCC;
+}
+
+#Erik-Dreyer-a.selected,
+#Erik-Dreyer-a:hover {
+  color: #00FFFF;
+}
+
+#James-Quon-a.selected,
+#James-Quon-a:hover {
+  color: #00CCFF;
+}
+
+#John-Dierks-a.selected,
+#John-Dierks-a:hover {
+  color: #0099FF;
+}
+
+#Jurg-Schaeppi-a.selected,
+#Jurg-Schaeppi-a:hover {
+  color: #0066FF;
+}
+
+#Kevin-Zengel-a.selected,
+#Kevin-Zengel-a:hover {
+  color: #0033FF;
+}
+
+#Kiley-Story-a.selected,
+#Kiley-Story-a:hover {
+  color: #6600FF;
+}
+
+#Kit-Hennessey-a.selected,
+#Kit-Hennessey-a:hover {
+  color: #CC00FF;
+}
+
+#Lee-Riley-a.selected,
+#Lee-Riley-a:hover {
+  color: #FF00CC;
+}
+
+#Lindsey-Jones-a.selected,
+#Lindsey-Jones-a:hover {
+  color: #FF0066;
+}
+
+#Matt-Odonnell-a.selected,
+#Matt-Odonnell-a:hover {
+  color: #FF0000;
+}
+
+#Michael-Ladt-a.selected,
+#Michael-Ladt-a:hover {
+  color: #FF6600;
+}
+
+#Michael-Lanning-a.selected,
+#Michael-Lanning-a:hover {
+  color: #FF9900;
+}
+
+#Nathan-Igdaloff-a.selected,
+#Nathan-Igdaloff-a:hover {
+  color: #FFCC00;
+}
+
+#Steve-Dolan-a.selected,
+#Steve-Dolan-a:hover {
+  color: #FFFF00;
+}
+
+
+
+/* MAIN Slot Machine */
+
+body {
+	overflow: hidden;
+}
+
+#wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+}
+
+#quote, #about, #work {
+	-moz-transition: top .5s ease-in-out;
+  	-webkit-transition: top .5s ease-in-out;
+  	-ms-transition: top .5s ease-in-out;
+  	-o-transition: top .5s ease-in-out;
+  	transition: top .5s ease-in-out;
+}
+
+#quote {
+	overflow-y: scroll;
+	position:absolute;
+	width: 40%;
+	left: 20%;
+	top: -100%;
+	height: 100%;
+	z-index: 1;
+	
+}
+
+#about {
+	overflow-y: scroll;
+	position:absolute;
+	width: 18%;
+	left: 60%;
+	height: 100%;
+	top: 130%;
+		
+	z-index: 2;
+}
+
+#work {
+	overflow-y: scroll;
+	position:absolute;
+	width:20%;
+	left: 80%;	
+	top: -100%;
+	height: 100%;
+	z-index: 3;
+}
+
+#quote.active, #work.active, #about.active {
+	top:0;	
+}
+
+
+.individual {
+	height: 100vh;
+	max-height: 100vh;
+	padding-top: 50px;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    
+}
+::-webkit-scrollbar-track {
+    
+    border-radius: 0px;
+    background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+	background: #000;
+    
+    height: 10px;
+   padding: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* quote */
+
+
+#quote blockquote {
+  margin-right: 10%;  
+  padding-left: 12%;
+  text-align: right;
+}
+
+#quote blockquote:before {
+  height: 105px;
+  background: url(../images/open-quote.png) right top no-repeat;
+  display: block;
+  content: " ";
+  text-align: right;
+}
+
+#quote blockquote p {
+  font-family: 'BariolRegularRegular', sans-serif;
+  font-size: 400%;
+  line-height: 100%;
+  padding-bottom: 40px;
+}
+
+#quote blockquote footer {
+	font-family: 'BariolRegularRegular', sans-serif;	
+	font-size: 124%;
+}
+
+#quote blockquote footer span {
+	font-family: 'BariolBoldBold', sans-serif bold;
+}
+
+
+/* about */
+
+.icons {
+	width: 180px;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+.icons li {
+	display: inline-block;
+	padding: 25px;	
+}
+
+
+/* Benton-Rochester */
+
+#Benton-Rochester-quote {
+	background: #CCFF00;
+}
+
+#Benton-Rochester-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Benton-Rochester-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;  
+	background: url(../images/benton-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;  
+}  
+
+/* Dan-Nelson */
+
+#Dan-Nelson-quote {
+	background: #33FF00;
+}
+
+#Dan-Nelson-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Dan-Nelson-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;  
+	background: url(../images/dan-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;  
+} 
+
+/* Dave-Lazkarzewski */
+
+#Dave-Lazkarzewski-quote {
+	background: #00FF99;
+}
+
+#Dave-Lazkarzewski-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Dave-Lazkarzewski-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;  
+	background: url(../images/dave-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;  
+} 
+
+
+/* #Davis-Godbout */
+
+#Davis-Godbout-quote {
+	background: #00FFCC;
+}
+
+#Davis-Godbout-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Davis-Godbout-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;  
+	background: url(../images/davis-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+/* Erik-Dreyer */
+
+#Erik-Dreyer-quote {
+	background: #00FFFF;
+}
+
+#Erik-Dreyer-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Erik-Dreyer-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;
+	background: url(../images/missing-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+/* James-Quon */
+
+#James-Quon-quote {
+	background: #00CCFF;
+}
+
+#James-Quon-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#James-Quon-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;
+	background: url(../images/james-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+/* John-Dierks */
+
+#John-Dierks-quote {
+	background: #0099FF;
+}
+
+#John-Dierks-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#John-Dierks-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;
+	background: url(../images/dierks-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+
+/* Jurg-Schaeppi */
+
+#Jurg-Schaeppi-quote {
+	background: #0066FF;
+}
+
+#Jurg-Schaeppi-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Jurg-Schaeppi-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;
+	background: url(../images/jurg-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+
+/* Kevin-Zengel */
+
+#Kevin-Zengel-quote {
+	background: #0033FF;
+}
+
+#Kevin-Zengel-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Kevin-Zengel-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;
+	background: url(../images/kevin-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+/* Kiley-Story */
+
+#Kiley-Story-quote {
+	background: #6600FF;
+}
+
+#Kiley-Story-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Kiley-Story-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;
+	background: url(../images/kiley-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+
+/* Kit-Hennessey */
+
+#Kit-Hennessey-quote {
+	background: #CC00FF;
+}
+
+#Kit-Hennessey-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Kit-Hennessey-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;
+	background: url(../images/kit-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+
+/* Lee-Riley */
+
+#Lee-Riley-quote {
+	background: #FF00CC;
+}
+
+#Lee-Riley-about {
+	position: relative;  
+  overflow: hidden; 
+}
+
+#Lee-Riley-about:before {  
+	content: "";  
+	position: absolute;  
+	width: 200%;  
+	height: 200%;  
+	top: -50%;  
+	left: -50%;  
+	z-index: -1;
+	background: url(../images/lee-bg.jpg) 0 0 repeat;  
+	-webkit-transform: rotate(-15deg);  
+	-moz-transform: rotate(-15deg);  
+	-ms-transform: rotate(-15deg);  
+	-o-transform: rotate(-15deg);  
+	transform: rotate(-15deg);
+	opacity: 0.25;   
+}
+
+
+/* Lindsey-Jones */
+
+#Lindsey-Jones-quote {
+	background: #FF0066;
+}
+
+
+/* Matt-Odonnell */
+
+#Matt-Odonnell-quote {
+	background: #FF0000;
+}
+
+
+/* Michael-Ladt */
+
+#Michael-Ladt-quote {
+	background: #FF6600;
+}
+
+
+/* Michael-Lanning */
+
+#Michael-Lanning-quote {
+	background: #FF9900;
+}
+
+
+/* Nathan-Igdaloff */
+
+#Nathan-Igdaloff-quote {
+	background: #FFCC00;
+}
+
+
+/* Steve-Dolan */
+
+#Steve-Dolan-quote {
+	background: #FFFF00;
+}
+
+
+
+
+/* CLEARFIXES */
+
+
+/*
+#quote blockquote:before {
+	clear: both;
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+*/
+
+
+
+
+
+
+
+
